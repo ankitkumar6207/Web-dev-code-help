@@ -1,0 +1,134 @@
+Html creates the skeleton of the web page and it handles the what part means , what content
+will present in the web page
+
+css handles the what how part means how the web page will look like the appearing ,stling
+formatting
+
+selectors in css: using selector we can select elements 
+
+1.simple selector 
+element(type/tag selector)
+a{
+    color:aqua;
+} 
+,class selector(can be same for many elements)
+.class{
+    font-size:4px;
+}
+
+id selector(id can't be repeated)
+#id{
+    backgroun-color:red;
+}
+
+
+2.pseudo -class selector
+a:hover(pseudo class refer mdn){
+    color:red;
+}
+3.multiple selectors(grouping selector)
+table,tr,td{
+    border:2px solid grey;
+}
+
+universal selector:
+*{}
+
+nested slelector:
+attribute selector:
+
+
+applying style using thre ways:
+1.inline CSS : applied in the opening tag using style atribute
+<p style="font-size: 39px;">Hello</p>
+2.internal CSS : applied using style tag inside the head tag
+<!-- <style>
+    color: green;
+</style> -->
+3.external CSS: create a new page for css (style.css)(importand or used) and link them using 
+link tag inside head<link rel="stylesheet" href="style.css">
+
+
+Specificity: precedence of selectors 
+inline > id > class > tag
+or you can write !important (it will be applied) bad practice(not recommended)
+
+
+box model in css:every element in html reperesented as a rectangle box that can have width,
+height , margin, padding, border
+width : horizontal space
+height : vertical space
+margin: space outside the rectangle(outer part of border)
+padding: space inside the rectangle (space between border and content)
+
+#imp : if we apply padding then it will increase the size of rectangle because the content
+size will be same but 
+if you apply box-sizing : border-box then the size of content will be minimized and 
+rectangle size will remail same
+
+border : in center of margin and padding
+
+default marging of every element is 8px
+
+
+Colors  in css :
+three famous color options are :
+1.hexadical Colors #33ff22 (0 to 9 then a to f)two value red ,second two value green , third two value red
+2.RGB colors : rgb(_,_,_) every value lies among 0 to 255 rgba(_,_,_,_)
+3.prdefine / cross browser colors : blue , yellow , black(140 colors are supported)
+
+
+units is css:
+1.px: 1/96th of an inch or the smallest part of a screen is called pixel and it is fixed
+the hardware px and css px are different 
+
+2.% width :
+width : 10%; width of its instant parent 500 px parent width so 50px with this element
+<style>
+    .div{
+        width:10%;
+    }
+</style>
+<div width="500px">
+    <div class="div">width</div>
+</div>
+
+3. relative to font size:
+em: relative to parent
+ supposee parent has font size of 18 px
+ child font-size : 1 em(18px) 2em(36px)
+if parent is not there then relative to body 16px
+
+4.rem :  relative to root(root : HTML(16px)) always relative to root even it has instant parent
+1 rem : 16px
+2 rem : 36 px;
+
+5. vw and vh : relative the view port(screen)
+vw : 1/100 * width
+vh : 1/100 * height
+
+width: 50vw ;(it takes half of width of entire page)
+height: 50vh;(it takes half of the height of entire page)
+
+question : 1 % vs 1 vw 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
