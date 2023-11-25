@@ -1,0 +1,116 @@
+Gradient:  it let you display smoth transition between two or more specified colors
+linear Gradient:
+<style>
+    div{
+        background-image: linear-gradient(red,blue);
+        /* (defult top to bottom) */
+        background-image: linear-gradient(to right,red,blue);
+        /* (left to right) to left, to bottom to top*/
+        /* diagonal : */
+        /* to bottom right , to bottom left ..... and so on */
+        /* using degree:  */
+        background-image:linear-gradient(45deg,red, blue,green);
+        /* using transparancy :   */
+        background-image: linear-gradient(to bottom,rgba(255,0,0,0),rgba(0,0,255,1));
+        background-image: linear-gradient(to top, red 5%,blue 10%,yellow 50%);
+
+    }
+</style>
+radiul Gradient: same as above 
+background-image:radial-gradient(red,blue)
+conic Gradient ? same as above
+
+
+
+shadow :
+by defualt the shadow will come at right and bottom but if you want it to left then 
+give horizontal and vertical same value as -ve blur can't repeated 
+two type of shadow:
+text shadow :
+<style>
+   h1{
+    text-shadow: 3px 3px 2px red;
+    /* syntax: horizontal component(compulsory),vertical(compulsory),blur,color;  */
+    /* horizontal component : horizontal distance from the original text     */
+    /* we can add two shadow simaltaneously   */
+
+}
+</style>
+
+box shadow:
+
+<style>
+    .box{
+        box-shadow: 10px 10px;
+        /* same as above and the default color of box shadow is same as the color of the 
+        content available inside the box */
+
+
+    }
+
+</style>
+
+
+
+Dimension in css:
+width : horizontal length of a rectanle (element) is called width
+height :vertical length of a rectanle (element) is called height
+
+min-height : after a given max hight the content will overflow and to handle overflow 
+we can use overflow:scroll.
+refer dimension folder
+
+min-width  : if the content is smaller than the minimum height then it will fit inside the 
+div but if content is bigger than the minimum height then the size of box will automaaticaly
+ increase
+
+max-width
+max-height
+
+
+overflow : refer mdn doc 
+visible  (default) bhahar dikhega
+hidden bahar ka ht jayega
+scroll scrolling behaviour add ho jayega
+auto: if content is small behave like visible otherwise behave like scroll
+
+
+Position : where should the element should place defined by postion property
+static  : default position (  follow the normal flow of element first come first server)no need to add
+relative: we can use four properties top,bottom,left and right to move the element by assigning the position of it as relative
+relative to its normal position or actual position
+Fixed :it will fix the box
+absolute : same as relative but it will position relative to the view port not from its actual position (relative to its parent if it is non- static or if static parent then relative to body)
+sticky : if you scroll the page then it will behave as fixed when go up then work as relative 
+poistion : sticky
+top : 0px
+
+
+
+Transformation :
+translate
+roatate
+scale 
+screw 
+matrix
+transform: translate(100px,10px); 
+    /* translate in x-axis and y-axis  */
+    /* transform: rotate(45deg); */
+    /* clock wise rotation */
+    /* transform: rotate(-45deg); */
+    /* anticlock wise roatation */
+    margin:200px; 
+    transform: scale(1,4);
+    /* x and y axis  */
+    transform:skew(20deg);
+    transform: skew(-20deg);
+
+
+3-d transformation :
+
+
+
+
+
+
+

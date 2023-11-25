@@ -1,0 +1,16 @@
+.box{
+    background-color: rgb(0, 243, 130);
+    transform: translate(100px,10px); 
+    /* translate in x-axis and y-axis  */
+    /* transform: rotate(45deg); */
+    /* clock wise rotation */
+    /* transform: rotate(-45deg); */
+    /* anticlock wise roatation */
+    margin:200px; 
+    transform: scale(1,4);
+    /* x and y axis  */
+    transform:skew(20deg);
+    transform: skew(-20deg);
+
+
+}
