@@ -1,0 +1,67 @@
+animations in css :
+if style of an element gradually changes from one to another then that is called animantions
+
+functions in css:
+calc(): all the arithmetic opeation can happen in it;
+width:calc(100%-200px): 100% width me 200px minus kr do les suppose 100 % means 1200px so the result is 1000px
+width:min(50%,400px): whichever is minimum will become the width of it.
+height:max(60%,500px);
+
+minmax(100px,400px) min : 100px max:400px
+
+variables in css:
+its like functions 
+we can use variables to assign colors with a general name so that if we want to change the colore
+then we only have to change in the varible 
+--dark-red:#981a2c;
+always use 2 hiphons to declare varialbes(--)
+and declare varible globally not locally so that every element can use it.
+:root{
+    --dark-red:#981a2c;
+}
+
+.box{
+    color:var(--dark-red);
+}
+
+
+transitions:
+apply transition in box where you wanna apply these properties.
+.box:hover{
+    background-color:red;
+}
+transition:2s;//it will change the color after 2s when you hover.
+transition-property:background-color;//in which propery you wanna apply transition don't apply it with all 
+transition-delay:5s;background-color will be visible after 5sec
+
+shorthand property:
+.box:hover{
+   transform:roatate(45deg);
+   background-color:brown;
+   <!-- transform:translate(500px); --> it will move the box from 0 to 500px in x axis
+}
+transition:transform 1s        ease                     3s;
+          property   duration  timing function       delay 
+transition:all 5s ease 2s; background-color  will change and it will also roatate
+timing function:
+ease in: starting me speed km hoga and ending speed jyada
+ease-out:starting me speed jyada hoga and ending me speed km
+
+
+
+animations and keyframes:
+animation-name:
+animation-duration 
+animation-timing-function 
+animation-delay 
+animation-direction 
+
+
+
+
+
+
+
+
+
+

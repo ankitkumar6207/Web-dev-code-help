@@ -1,0 +1,85 @@
+objects :
+object is an entity which have its own property and behaviour.
+objects are also collection of key value pairs.
+
+ex :car:
+property: color,weight
+behaviour: run, break, speed
+
+syntax to create object:
+let rectange ={
+    length:1;
+    breadth:2;
+
+};
+ how can we know that it is object ({} it is called object literals)
+let ={}: empty object 
+
+
+let rectangle= {
+    length:1, // adding properties
+    breadth:2,
+  
+    draw:function() // adding behaviour
+    {
+      console.log("this is a draw method");
+    }
+  
+  };
+
+function inside object is called method
+we can access the properties  and methods of object using . operator 
+
+rectangle.length;
+rectangle.draw();
+we are using objects so we are doing object oriented programming.   
+
+if we want repetedly create the objects that's why we creating the object.
+we can create object by using two methods:
+factory function: factory function is a type of function which is used to create object and 
+to create object you need to create a function call request and then in return it will 
+you a object.
+function createRectangle() {
+    let rectangle= {
+        length:1, // adding properties
+        breadth:2,
+      
+        draw:function() // adding behaviour
+        {
+          console.log('this is a draw method');
+        },
+        run() //2nd way to create method inside the object
+        {
+            console.log("it is running");
+
+        }
+      
+      };
+      return rectangle;
+
+}
+let obj = createRectangle();
+obj.run();
+
+
+constructor functions :
+here we follow pascal Notation means first letter of every word would be capital ->Rectangle
+it is just a differnt way to create objects first you have to initilize the function and 
+then create object from it.
+
+this will refer the current object
+we can use any of the object creation functions
+ex : a.draw();
+draw()
+{console.log(this.length)}// here this reperesents the a object (current object)
+
+dynamic nature of an object :
+because objects are dyanamin in nature so we can create and delete the properties and behaviour of an 
+object.
+
+constructor property : it will give the constructor associated with the object.
+
+
+
+
+

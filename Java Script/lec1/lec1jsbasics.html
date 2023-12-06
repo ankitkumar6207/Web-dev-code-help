@@ -1,0 +1,225 @@
+html is used to create skeleton and structure of the webpage
+css is used to handle the appearance or designing part
+js is used to handle the functinality part or beviour part,logical part handle by js
+
+ex : what should happen when we click a button 
+
+what is js?
+js is light weigted programming language or its a client side scripting language which is
+used to implement functionality to a web page
+
+what can we do with js?
+do we need a compiler to run js?
+js engine is required  :
+firefox uses spider monkey js engine
+and chrome uses v8 js engine
+
+
+js was build to run client side scripting languages and it was only runnable in browsers
+but a person came and added c++ to js and then it become node which is runnable outside the  browser aslo ,  then it became server side language also.
+
+script tag is used to store the client side scripting code. 
+btw it is recomended to write js code externally.
+
+to make a good user exprience we put script code just before the ending of body tag.
+
+
+we can run js code in browser,
+we can run js code on vs code terminal by using node index.js 
+we can also run js code using live server 
+
+
+variables : named memory location is called variables
+we use let keyword to create js variables
+let a = 5;
+let a = 'ankit';
+
+we can also use var to create variables 
+let vs var : scope ka difference hota hai 
+
+let is limited to instant scope but var is global to the entire file
+redeclaration with let is not possible
+but we can do redeclaration with var 
+
+constant : value can't be change .
+const a = 9;
+a = 10; // give error
+
+
+data types :
+primitive types :
+string , number , boolean , undefined :not defined ex : let a;
+console.log(a)//give undefined
+, null   : the value is empty
+
+
+dynamic typing : the type can be different in js
+let a = 5;
+a = 'ankit '// it can happen.
+
+reference type :
+object  :multiple variables are linked (key value pairs)
+let person = {
+    let name:'ankit',
+    age: 23
+};
+we can acces it using two ways:
+dot notation : person.age;
+bracket notation : person['age'];
+
+function 
+arrays : collection of similary  type of data elements.
+
+
+operator : 
+arithmetic  : +  - / % **(x**y = x^y) , ++,-- (pre and post increament and decrement)
+pre inc : pehle increament then assign the value 
+post inc : pehle ass then increament and vice versa for decrement 
+assignment : =,/=,*=....
+comaparison : == , ===,>,<,>=,<=,!== gives true or false 
+=== strict equal
+
+loose equality  : ==  only value should same 
+string equality  : === data and value shold be same
+ex : let num = 1; let str ='1';
+     num == str (true)
+     num === str(false)
+
+bitwise : 
+bitwise and:(&)
+bitwise or:(|)
+
+2 & 3 
+10
+11
+10 (2)
+
+2 | 3
+10
+11
+11 (3)
+
+
+
+
+logical  :
+and (&&):all cond must be true for true result
+or (||): only one cond is true then true 
+not (!): convert true to false and false to true 
+
+logical with non booleans :
+console.log(true|| false ): true
+console.log(false || 5) : 5 output  
+here the concept of falsy and truthy concept is used: in or always true value printed
+falsy : undefined , null ,0 ,false , nan
+truthy  : anything that is not falsy
+console.log(false || 'lover')
+
+short circuiting is a concept of logical or: means first truth value will be printed
+console.log(false || 5 ||1)//here 5 will be printed (here 5 is the first true value)
+
+
+
+ternary operator : conditional operator :
+cond ?true  : false
+let age = 20;
+console.log(age);
+let canVote = (age > 18)?'you can vote':'no vote';
+console.log(canVote); //you can vote
+
+
+operator precedence:
+no need to learn any precedence rule or associtivity rule:
+just use bracket rule means:
+just apply bracket.
+
+a+b*c/r;
+you can write it as :
+(a+((b*c)/r))
+
+
+control statements:
+mark = 98;
+
+if(mark > 98)
+{
+    console.log('A');
+}
+else if(mark > 80)
+{
+    console.log('B';)
+}
+else if(mark > 70)
+{
+    console.log('C';)
+}
+else if(mark > 60)
+{
+    console.log('D';)
+}
+else 
+{
+    console.log('E');
+}
+
+switch expression :
+int num =2;
+
+switch(num)
+{
+    case 1:
+    console.log('A');
+    break;
+    case 2:
+    console.log('B');
+    break;
+    case 3:
+    console.log('C');
+    break;
+    default :
+    console.log('D');
+}
+
+
+loops : we use loop for repetation of task
+for loop:
+for(initilization,condition,updation)
+{
+    //code
+}
+
+for(let i=0;i<= 5;i++)
+{
+    consol.log('ankit'+i);
+}
+01234
+
+while loop :
+let i =0;
+while(i<= 5)
+{
+    console.log(i);
+    i++;
+}
+
+do while loop :
+let i=0;
+do{
+console.log(i);
+i++;
+}while(i<= 5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

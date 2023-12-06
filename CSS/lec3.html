@@ -1,0 +1,91 @@
+flex box : it is a layout model which can handle space disrubution and alignment capability
+
+>flex is like a container or parent which is called flex and the instant childs of it
+is called flex items
+
+>in flex box the horizontal axis is called main axis and the vertical axis is called cross 
+axis
+
+we can layout the page by using block and inline display or tables or positions but 
+flex box is the most popular way to design the page and it is more flexible
+
+properties of flex(parent):
+display: flex;(default flex direction is towards main axis means horizontal)
+flex-direction:row,column,row-reverse,column-reverse 
+
+flex-wrap : wrap; it preserves the width of flex-items
+no-wrap, wrap-reverse
+ by default it is no wrap , if it is no-wrap then the elements inside the container
+will squiz even they have fixed width but if don't want it just wrap it then the width will same and it 
+will work as responsive design
+
+flex-flow:shorthand of flex direction and flex wrap
+flex-flow:row wrap;
+
+justify-content: this property is applied on the main axis
+justify-content: start;
+justify-content: end;
+justify-content: space-around;
+justify-content: space-evenly;
+justify-content: space-between;
+
+
+alignn-items : this property is applied on the cross axis
+align-items: flex-end;
+align-items: flex-start;
+align-items:center;
+align-items: stretch;
+align-items: baseline;
+
+
+how to center an element vertically as well as horizontally:
+justify-content:center;(horizontally)
+align-items:center;(vertically)
+
+
+gap:10px; it will give gap between the item leaving the margin at the start and end
+
+align-content : it handles the spacing or alignment between multiple row(align items).
+align-content: flex-start;
+align-content: flex-end;
+align-content: center;
+align-content: space-around;
+align-content: space-between;
+align-content: space-evenly;
+
+
+
+
+flex item properties :
+order:bydefault order of every box is zero.
+order:1;
+flex-grow:1; it will take the entire width
+flex-shrink: 4;
+/* by default value of shrink is 1 and now it will shrik faster when you decrease the width */
+flex-basis:100px it is same as width but if we use widthe the overflow conten is hidde but in the case of flex-basis the entire content will show even the conten is overflowed
+flex:shorthand property:
+you can give all the above 4 properties using the using flex
+flex:1 4 3 120px;
+
+align-self:only one element align
+#box1{
+    align-self:stretch;
+} 
+#box2{
+    align-self:flex-start;
+}
+#box3{
+    align-self:flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
